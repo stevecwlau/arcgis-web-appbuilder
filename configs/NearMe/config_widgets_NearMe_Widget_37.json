@@ -1,0 +1,377 @@
+{
+  "fontColor": "#000000",
+  "highlightColor": "#00ffff",
+  "showSelectionColor": true,
+  "searchLayers": [
+    {
+      "url": "https://services4.arcgis.com/Owa3iGIt9ooJFTsi/arcgis/rest/services/atm_final_with_district/FeatureServer/0",
+      "geometryType": "esriGeometryPoint",
+      "id": "atm_final_with_district_2996",
+      "layerId": "0",
+      "baseURL": "https://services4.arcgis.com/Owa3iGIt9ooJFTsi/arcgis/rest/services/atm_final_with_district/FeatureServer/",
+      "isMapServer": false,
+      "title": "atm_final_with_district",
+      "visibility": true,
+      "popupInfo": {
+        "title": "{bank}: {name}",
+        "fieldInfos": [
+          {
+            "fieldName": "OBJECTID",
+            "label": "OBJECTID",
+            "isEditable": false,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "Join_Count",
+            "label": "Join_Count",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "TARGET_FID",
+            "label": "TARGET_FID",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 0,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "name",
+            "label": "name",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "bank",
+            "label": "bank",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "lat",
+            "label": "lat",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "ENAME",
+            "label": "District",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "lon",
+            "label": "lon",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "logo_url",
+            "label": "logo_url",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "ID",
+            "label": "ID",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox",
+            "format": {
+              "places": 2,
+              "digitSeparator": true
+            }
+          },
+          {
+            "fieldName": "expression/expr1",
+            "visible": true
+          },
+          {
+            "fieldName": "address",
+            "label": "Address",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "rmb",
+            "label": "RMB",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CNAME",
+            "label": "名稱",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "fcm",
+            "label": "FCM",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "hour_weekdays",
+            "label": "Weekdays Hours",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "CNAME_S",
+            "label": "CNAME_S",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": false,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "hour_sat",
+            "label": "Saturday Hours",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "hour_sun",
+            "label": "Sunday Hours",
+            "isEditable": true,
+            "tooltip": "",
+            "visible": true,
+            "stringFieldOption": "textbox"
+          },
+          {
+            "fieldName": "expression/expr0",
+            "visible": true
+          }
+        ],
+        "description": null,
+        "showAttachments": true,
+        "expressionInfos": [
+          {
+            "name": "expr0",
+            "title": "Google Street View",
+            "expression": "var Latitude = $feature.lat;\r\nvar Longitude = $feature.lon;\r\n\r\nvar url = \"http://www.google.com/maps/@?api=1&map_action=pano&viewpoint=\" + text(Latitude) + \",\" + text(Longitude);\r\nreturn url;$feature",
+            "returnType": "string"
+          },
+          {
+            "name": "expr1",
+            "title": "District",
+            "expression": "Proper($feature.ENAME, 'everyword')",
+            "returnType": "string"
+          }
+        ],
+        "mediaInfos": [
+          {
+            "title": null,
+            "type": "image",
+            "caption": "",
+            "value": {
+              "sourceURL": "{logo_url}",
+              "linkURL": ""
+            }
+          }
+        ]
+      },
+      "renderer": {
+        "type": "simple",
+        "symbol": {
+          "angle": 0,
+          "xoffset": 0,
+          "yoffset": 0,
+          "type": "esriPMS",
+          "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Community-Events-ATM.png",
+          "imageData": "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",
+          "contentType": "image/png",
+          "width": 13.5,
+          "height": 13.5
+        }
+      }
+    }
+  ],
+  "bufferInfo": {
+    "isVisible": true
+  },
+  "defaultBufferDistance": 100,
+  "maxBufferDistance": 500,
+  "bufferDistanceUnit": {
+    "bufferUnit": "UNIT_METER",
+    "routeUnit": "METER",
+    "distanceUnit": "meters",
+    "label": "Meters",
+    "acronym": "m",
+    "value": "meters"
+  },
+  "zoomToFeature": true,
+  "intersectSearchedLocation": false,
+  "enableProximitySearch": true,
+  "routeService": "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World",
+  "directionLengthUnit": {
+    "bufferUnit": "UNIT_KILOMETER",
+    "routeUnit": "KILOMETERS",
+    "distanceUnit": "kilometers",
+    "label": "Kilometers",
+    "acronym": "km",
+    "value": "kilometers"
+  },
+  "selectedSearchLayerOnly": false,
+  "isGeodesic": false,
+  "showLocationTool": true,
+  "symbols": {
+    "routeSymbol": {
+      "color": [
+        128,
+        100,
+        162,
+        255
+      ],
+      "width": 6.75,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "graphicLocationSymbol": {
+      "angle": 0,
+      "xoffset": -12,
+      "yoffset": 12,
+      "type": "esriPMS",
+      "url": "http://static.arcgis.com/images/Symbols/Basic/ArrowYellow.png",
+      "imageData": "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",
+      "contentType": "image/png",
+      "width": 22.5,
+      "height": 22.5
+    },
+    "polylineSymbol": {
+      "color": [
+        21,
+        99,
+        184,
+        255
+      ],
+      "width": 3.75,
+      "type": "esriSLS",
+      "style": "esriSLSSolid"
+    },
+    "polygonSymbol": {
+      "color": [
+        255,
+        189,
+        1,
+        0
+      ],
+      "outline": {
+        "color": [
+          255,
+          189,
+          1,
+          255
+        ],
+        "width": 2.25,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    },
+    "bufferSymbol": {
+      "color": [
+        79,
+        129,
+        189,
+        128
+      ],
+      "outline": {
+        "color": [
+          54,
+          93,
+          141,
+          255
+        ],
+        "width": 1.5,
+        "type": "esriSLS",
+        "style": "esriSLSSolid"
+      },
+      "type": "esriSFS",
+      "style": "esriSFSSolid"
+    }
+  },
+  "maxResultCount": null,
+  "searchSourceSettings": {
+    "allPlaceholder": "",
+    "showInfoWindowOnSelect": true,
+    "sources": [
+      {
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "ArcGIS World Geocoding Service",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Find address or place",
+        "countryCode": "HKG",
+        "zoomScale": 50000,
+        "maxSuggestions": 6,
+        "maxResults": 6,
+        "searchInCurrentMapExtent": false,
+        "enableLocalSearch": true,
+        "localSearchMinScale": 300000,
+        "localSearchDistance": 50000,
+        "type": "locator"
+      }
+    ]
+  },
+  "attributeSymbology": [],
+  "filterSettings": {
+    "collapse": false,
+    "groupFiltersByLayer": false,
+    "expandFiltersOnLoad": false,
+    "filters": []
+  },
+  "showImageGallery": true,
+  "showFeaturesCount": true,
+  "showAllLayers": false,
+  "editorDescription": "Search for an address or locate on map",
+  "noFeatureFoundMessage": "No results found",
+  "showCurrentLocationTool": true,
+  "enableDirection": true,
+  "bufferInputOption": "sliderAndTextbox"
+}

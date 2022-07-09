@@ -1,0 +1,22 @@
+{
+  "name": "FLHover",
+  "platform": "HTML",
+  "version": "2.12",
+  "wabVersion": "2.12",
+  "author": "Robert Scheitlin",
+  "description": "Hover tips for feature layers",
+  "copyright": "2019",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasStyle": false,
+    "inPanel": false,
+    "hasUIFile": false,
+    "hasConfig": true,
+    "hasSettingPage": true,
+    "hasSettingUIFile": true,
+    "hasSettingLocale": true,
+    "hasSettingStyle": true,
+    "supportMultiInstance": true,
+    "keepConfigAfterMapSwitched": false
+  }
+}

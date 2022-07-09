@@ -1,0 +1,154 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": true,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "atm_final_with_district_2996",
+      "url": "https://services4.arcgis.com/Owa3iGIt9ooJFTsi/arcgis/rest/services/atm_final_with_district/FeatureServer/0",
+      "name": "atm_final_with_district",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "bank",
+              "label": "bank",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": []
+            },
+            "interactiveObj": {
+              "prompt": "Bank",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "expr": "1=1",
+            "displaySQL": "1=1"
+          },
+          {
+            "fieldObj": {
+              "name": "ENAME",
+              "label": "ENAME",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": []
+            },
+            "interactiveObj": {
+              "prompt": "District",
+              "hint": "",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "expr": "1=1",
+            "displaySQL": "1=1"
+          },
+          {
+            "fieldObj": {
+              "name": "rmb",
+              "label": "rmb",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "selectUI": "expanded",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "TRUE",
+                  "alias": "Yes",
+                  "isChecked": false
+                },
+                {
+                  "value": "FALSE",
+                  "alias": "No",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "None",
+              "enableEmpty": true
+            },
+            "interactiveObj": {
+              "prompt": "RMB",
+              "hint": "",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          },
+          {
+            "fieldObj": {
+              "name": "fcm",
+              "label": "fcm",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "selectUI": "expanded",
+              "type": "uniquePredefined",
+              "value": [
+                {
+                  "value": "TRUE",
+                  "alias": "Yes",
+                  "isChecked": false
+                },
+                {
+                  "value": "FALSE",
+                  "alias": "No",
+                  "isChecked": false
+                }
+              ],
+              "emptyLabel": "None",
+              "enableEmpty": true
+            },
+            "interactiveObj": {
+              "prompt": "FCM",
+              "hint": "",
+              "cascade": "none"
+            },
+            "caseSensitive": false
+          }
+        ],
+        "expr": "(1=1) AND (1=1) AND (1=1) AND (1=1)",
+        "displaySQL": "(1=1) AND (1=1) AND (1=1) AND (1=1)"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": true,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriPMS",
+        "url": "https://static.arcgis.com/images/Symbols/Emergency-Management/Community-Events-ATM.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    }
+  ]
+}
